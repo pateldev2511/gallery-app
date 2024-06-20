@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createBrowserClient, createServerClient } from "@supabase/ssr";
+import { createServerClient } from "@supabase/ssr";
 
 export async function middleware(req) {
     const res = NextResponse.next()
@@ -22,7 +22,8 @@ export async function middleware(req) {
                     })
                     response.cookies.set({
                         name, value, ...options
-                    }),
+                    })
+                },
                     remove(name, options){
                         req.cookies.set({
                             name, value: '', ...options
@@ -36,18 +37,18 @@ export async function middleware(req) {
                             name, value: '', ...options
                         })
                     }
-                }
+                
             }
         }
     )
 
     const {data: {user}} = await supabase.auth.getUser()
 
-    if(user && req.nextURL.pathname === '/'){
+    if(user && req.nextUrl.pathname === '/'){
         return NextResponse.redirect(new URL('/photos', req.url))
     }
 
-    if(!user && req.nextURL.pathname !== '/'){
+    if(!user && req.nextUrl.pathname !== '/'){
         return NextResponse.redirect(new URL('/', req.url))
     }
 
