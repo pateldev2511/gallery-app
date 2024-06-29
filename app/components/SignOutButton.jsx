@@ -1,3 +1,5 @@
+import { LogOut } from 'lucide-react';
+
 export default function SignOutButton(){
     return (
         <form action="/auth/signout" method="post">
@@ -5,7 +7,7 @@ export default function SignOutButton(){
             type="submit"
             className="bg-gradient-to-r from-red-500 to-orange-500 text-white py-2 px-4 rounded transition-all ease-in-out duration-300 hover:from-red-600 hover:to-orange-600"
             >
-                Sign Out
+                <span className='flex'>Sign Out <LogOut className='ml-2'/></span>
             </button>
         </form>
     )

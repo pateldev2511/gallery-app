@@ -1,4 +1,6 @@
 import SignOutButton from "../components/SignOutButton";
+import PhotoUploader from "../components/PhotoUploader";
+import PhotoGrid from "../components/PhotoGrid";
 
 export default function Photos () {
     return (
@@ -13,14 +15,14 @@ export default function Photos () {
                 className="flex flex-col items-center justify-center mb-6"
                 >
                     <h1
-                    className="text-black text-2xl font-bold mb-4 text-center"
+                    className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-3xl font-bold"
                     >
                         Photos
                     </h1>
-                    {/* <!-- Add a form to upload photos --> */}
+                    <PhotoUploader/>
                 </div>
                 <div>
-                    {/* <!-- Display the photos --> */}
+                    <PhotoGrid />
                 </div>
                 <div
                 className="absolute top-4 right-4"
