@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -29,5 +35,13 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .glass-effect {
+    /* From https://css.glass */
+    background: rgba(65, 87, 195, 0.329);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(7.5px);
   }
 }
