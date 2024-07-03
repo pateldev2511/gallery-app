@@ -52,7 +52,7 @@ export async function addOrRemoveFromFavorites(formData){
         }
     }
     revalidatePath('/photos')
-    revalidatePath('/revalidate')
+    revalidatePath('/favorites')
 
     return {success: true}
 }
