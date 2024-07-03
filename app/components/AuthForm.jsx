@@ -72,31 +72,35 @@ export default function AuthForm() {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border border-blue-700 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 whitespace-no-wrap bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-600 hover:to-blue-600 hover:shadow-lg hover:cursor-pointer text-white rounded transition-all ease-in-out duration-100"
         >
           {signInMessage}
         </button>
         <p className="text-center">
           {isNewUser ? (
-            <span className="text-sm text-blue-500 mr-5">
+            <span className="text-sm text-gray-500 mr-5">
               Already have an account?{' '}
               <button
                 type="button"
                 onClick={() => setIsNewUser(false)}
-                className="px-5 py-2.5 font-medium bg-blue-50 hover:bg-blue-50 hover:text-blue-600 text-blue-500 rounded-lg text-sm"
+                className="px-3 py-2.5 font-medium relative inline-flex items-center justify-center border-blue-400  text-blue-400 hover:text-blue-600"
               >
-                Log In
+                <span
+                className='relative bg-clip-border border border-transparent'
+                >Log In</span>
               </button>
             </span>
           ) : (
-            <span className="text-sm text-blue-500 mr-5">
+            <span className="text-sm text-gray-500 mr-5">
               Don't have an account?{' '}
               <button
                 type="button"
                 onClick={() => setIsNewUser(true)}
-                className="px-5 py-2.5 font-medium bg-blue-50 hover:bg-blue-100 hover:text-blue-600 text-blue-500 rounded-lg text-sm"
+                className="px-3 py-2.5 font-medium relative inline-flex items-center justify-center border-blue-400  text-blue-400 hover:text-blue-600"
               >
-                Sign Up
+                <span
+                className='relative bg-clip-border border border-transparent'
+                >Sign Up</span>
               </button>
             </span>
           )}

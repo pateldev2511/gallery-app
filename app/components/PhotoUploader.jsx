@@ -51,7 +51,7 @@ export default function PhotoUploader() {
 
   return (
     <label 
-    className="cursor-pointer flex items-center justify-center w-auto h-auto bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 hover:text-gray-100 transition ease-in-out duration-150 mt-3"
+    className="cursor-pointer flex items-center justify-center w-auto h-auto bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white font-normal py-2 px-4 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-fuchsia-700 hover:to-purple-700 hover:text-gray-100 transition ease-in-out duration-150 mt-3"
     htmlFor="photo-upload">
         {uploading ? 'Uploading...' : 'Upload Photo'}
         <input

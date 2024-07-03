@@ -10,9 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ['Nunito Sans', 'sans-serif'],
       },
-      backgroundImage: {
-        'grid-bg': "url('/grid-bg.jpg')",
-      },
+      
     },
   },
   plugins: [],
