@@ -96,6 +96,16 @@ The next.config.js file should be configured to support the Supabase storage URL
 
 Include screenshots of your application below to give users a visual idea of what to expect.
 
+
+<img width="1683" alt="login" src="https://github.com/pateldev2511/gallery-app/assets/57655776/0672d525-79f9-484d-bf3e-378dd88fb321">
+
+<img width="1683" alt="main" src="https://github.com/pateldev2511/gallery-app/assets/57655776/f6a9ea36-a215-4f6a-9af2-1ea19aedd2c8">
+
+<img width="1683" alt="full-view" src="https://github.com/pateldev2511/gallery-app/assets/57655776/772323e0-720c-41de-9ce0-da3846488bc4">
+
+<img width="1683" alt="fvrts" src="https://github.com/pateldev2511/gallery-app/assets/57655776/438d0210-332c-48d8-98a9-17d9922a449a">
+
+
 **Learn More**
 
 To learn more about Next.js, take a look at the following resources:
